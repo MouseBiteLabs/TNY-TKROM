@@ -40,9 +40,7 @@ C6 allows the use of modern Alliance-brand SRAM (55 ns). If you are using an old
 
 | Reference Designator  | Part Number/Value | Footprint  |
 | ------------- | ------------- | ------------- |
-| U1  | MMC3  | QFP44  |
-| U2  | <a href="https://www.mouser.com/ProductDetail/Microchip-Technology/SST39SF040-70-4C-WHE?qs=Oo69DRhzroe%2FJKrgAmUE5Q%3D%3D">39SF040</a>  | TSOP32 (14mm) |
-| U3  | <a href="https://www.mouser.com/ProductDetail/Microchip-Technology/SST39SF040-70-4C-WHE?qs=Oo69DRhzroe%2FJKrgAmUE5Q%3D%3D">39SF040</a>  | TSOP32 (14mm) |
+| B1  | CR2025 | CR2025  |
 | C1  | 22 uF | 1206  |
 | C2-C5  | 0.1 uF | 0603  |
 | C6  | 1 nF | 0603  |
@@ -51,12 +49,16 @@ C6 allows the use of modern Alliance-brand SRAM (55 ns). If you are using an old
 | R1  | 1 kΩ | 0603  |
 | R2  | 27 kΩ | 0603  |
 | R3, R4  | 10 kΩ | 0603  |
+| U1  | MMC3  | QFP44  |
+| U2  | <a href="https://www.mouser.com/ProductDetail/Microchip-Technology/SST39SF040-70-4C-WHE?qs=Oo69DRhzroe%2FJKrgAmUE5Q%3D%3D">39SF040</a>  | TSOP32 (14mm) |
+| U3  | <a href="https://www.mouser.com/ProductDetail/Microchip-Technology/SST39SF040-70-4C-WHE?qs=Oo69DRhzroe%2FJKrgAmUE5Q%3D%3D">39SF040</a>  | TSOP32 (14mm) |
 
 # Revision History
 
 ## v1.2
 
-- Added 1nF capacitor to fix MMC3 misbehavior with PRG RAM
+- Added 1nF capacitor (C6) to fix MMC3 misbehavior with PRG RAM
+- Added 220pF capacitor (C7) to prevent PPU glitches
 
 ## v1.1
 
