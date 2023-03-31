@@ -46,6 +46,7 @@ C6 allows the use of modern Alliance-brand SRAM (55 ns). If you are using an old
 | C1  | 22 uF | 1206  |
 | C2-C5  | 0.1 uF | 0603  |
 | C6  | 1 nF | 0603  |
+| C7  | 220 pF | 0603  |
 | D1, D2  | <a href="https://www.mouser.com/ProductDetail/Vishay-Semiconductors/BAT54W-HG3-18?qs=BJlw7L4Cy79w8lzctLBe5g%3D%3D">BAT54</a> | SMA (SOD-123) |
 | R1  | 1 kΩ | 0603  |
 | R2  | 27 kΩ | 0603  |
