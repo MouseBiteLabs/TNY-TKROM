@@ -36,6 +36,7 @@ Prepare the ROM using FamiROM or other similar program, ensuring the entire 4Mbi
 # Bill of Materials
 
 Capacitors should be at least 16V rated. Resistor wattage is negligible.
+C6 allows the use of modern Alliance-brand SRAM (55 ns). If you are using an older SRAM with slower access times, you may need to remove C6.
 
 | Reference Designator  | Part Number/Value | Footprint  |
 | ------------- | ------------- | ------------- |
