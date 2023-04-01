@@ -19,8 +19,6 @@ To use this board, you must remove an MMC3 mapper from an original NES board, an
 
 Here's a brief description on how to use this board with the TinyTendo. The process to make a board is similar to the preparation required for a regular-sized NES board. <a href="https://mousebitelabs.com/2017/06/25/how-to-make-an-nes-reproduction-cartridge">You may want to review the process of ROM preparation detailed on this page.</a> 
 
-## Board Type Requirements
-
 *Note: Do not solder U2 and U3 to the board before programming them.*
 
 TKROM games require every component on the board. **DO NOT** solder bridge the pads labelled "NO BATT."
@@ -31,7 +29,10 @@ TBROM, TEROM, TFROM, and TLROM games are the same as TSROM, but without U4, R2, 
 
 ## Flashing the Game
 
-Prepare the ROM using FamiROM or other similar program, ensuring the entire 4Mbit space is filled for both the PRG and CHR components. You then need to program the 39SF040s before soldering them to the board. I use a FlashCat with a TSOP adapter to achieve this.
+Prepare the ROM using FamiROM or other similar program, ensuring the entire 4Mbit space is filled for both the PRG and CHR components. You then need to program the 39SF040s before soldering them to the board. I use a <a href="https://www.embeddedcomputers.net/products/FlashcatUSB_XPORT/">FlashCat</a> with a <a href="https://www.embeddedcomputers.net/products/ParallelAdapters/">TSOP-32 adapter (Type B)</a> to achieve this.
+
+![image](https://user-images.githubusercontent.com/97127539/229261564-c88a657b-77d9-4c0d-82a2-03dc81a07958.png)
+![image](https://user-images.githubusercontent.com/97127539/229261450-ef890761-fea0-45c6-a812-c2f0e505b196.png)
 
 # Bill of Materials
 
@@ -40,7 +41,7 @@ C6 allows the use of modern Alliance-brand SRAM (55 ns). If you are using an old
 
 | Reference Designator  | Part Number/Value | Footprint  |
 | ------------- | ------------- | ------------- |
-| B1  | CR2025 | CR2025  |
+| B1  | CR2016 | CR2016  |
 | C1  | 22 uF | 1206  |
 | C2-C5  | 0.1 uF | 0603  |
 | C6  | 1 nF | 0603  |
@@ -59,6 +60,7 @@ C6 allows the use of modern Alliance-brand SRAM (55 ns). If you are using an old
 
 - Added 1nF capacitor (C6) to fix MMC3 misbehavior with PRG RAM
 - Added 220pF capacitor (C7) to prevent PPU glitches
+- Changed the battery to CR2016 to fit inside the cartridge shell
 
 ## v1.1
 
